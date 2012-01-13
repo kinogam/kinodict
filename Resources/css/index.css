@@ -1,0 +1,143 @@
+﻿#wrapper
+{
+    margin: 0 auto;
+    width: 300px;
+    font-size: 14px;
+}
+#searchbar
+{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 2px 0;
+}
+#searchtxt
+{
+    width: 290px;
+    height: 24px;
+    border: 1px solid #ccc;
+    margin-left: 2px;
+}
+#searchbtn
+{
+    position: absolute;
+    margin: 2px 2px 0 268px;
+    background-image: url(../images/searchbtn.png);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+#content
+{
+    margin-top: 15px;
+}
+
+#wordtag
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 20px;
+}
+#wordtag li
+{
+    float: left;
+}
+#wordtag a
+{
+    float: left;
+    line-height: 20px;
+    font-weight: bold;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: b1px solid #ccc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#A2D7FF));
+    text-decoration: none;
+    cursor: move;
+    padding: 3px;
+}
+
+#wordtag strong
+{
+    display: none;
+    position: absolute;
+    margin-left: -17px;
+    margin-top: 3px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+    width: 14px;
+    text-align: center;
+    border-radius: 3px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#1F398C), to(#00A3C2));
+    box-shadow: inset 0 0 2px #fff;
+}
+#wordtag .selected a
+{
+    margin-top: -10px;
+    line-height: 30px;
+    font-size: 20px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#86CBFF), to(#0092FE));
+    color: #fff;
+    padding: 3px 25px 3px 8px;
+}
+#wordtag .selected strong
+{
+    display: inline;
+}
+#worddesc
+{
+    border-top: 3px solid #0092FE;
+}
+.loading
+{
+    background:url(../images/load.gif) no-repeat center center;
+}
+.pros
+{
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#F2F7FB), to(#EEF5FD));
+    border-bottom: 1px solid #ace;
+    color: #049;
+    padding: 3px;
+}
+
+.def
+{
+    margin-bottom: 10px;
+}
+.def .pos
+{
+    position: absolute;
+    color: #F56C17;
+}
+.def ol
+{
+    margin: 0 0 0 80px;
+    padding: 0;
+    color: #049;
+}
+
+#history h4
+{
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#F2F7FB), to(#EEF5FD));
+    border: 1px solid #ace;
+    color: #049;
+    margin: 0;
+    padding: 3px;
+}
+#history ul
+{
+    margin: 0 0 0 20px;
+    padding: 0;
+    color: #049;
+}
+#history a
+{
+    display: block;
+    background: #eee;
+    margin: 3px 0;
+    text-decoration: none;
+}

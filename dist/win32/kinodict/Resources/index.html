@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>    
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <script src="script/jquery-1.7.min.js" type="text/javascript"></script>
+    <script src="script/dict.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            var dh = new DictHelper();
+            $("#searchbtn").on("click", function () {
+                dh.lookup($("#searchtxt").val());
+            });
+            $("#searchtxt").on("keydown", function (event) {
+                if (event.keyCode == 13)
+                    dh.lookup($("#searchtxt").val());
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>KinoDict</h1>
+        <div id="searchbar">
+            <a href="javascript:void(0);" id="searchbtn"></a>
+            <input type="text" id="searchtxt" />
+        </div>
+        <div id="content">
+            <ul id="wordtag">
+            </ul>
+            <div style="clear:both"></div>
+            <div id="worddesc">
+            </div>
+        </div>
+        <div id="history">
+        </div>
+    </div>
+</body>
+</html>

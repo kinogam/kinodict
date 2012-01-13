@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    
+    <script type="text/javascript">
+        var db = window.openDatabase("test", "1.0", "Demo", 200000);
+        db.transaction(function (tx) {
+
+            tx.executeSql("CREATE TABLE IF NOT EXISTS justtest (id, data)");
+            tx.executeSql('INSERT INTO justtest (id, data) VALUES (334, "ss")');
+
+                tx.executeSql("select * from justtest", [], function (tx, result) {
+                    console.log(result.rows.item(0).data);
+                });
+
+        });
+    </script>
+</head>
+<body>
+<div></div>
+</body>
+</html>
